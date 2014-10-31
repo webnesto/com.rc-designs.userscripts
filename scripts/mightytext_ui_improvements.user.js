@@ -2,7 +2,7 @@
 // @name           MightyText - UI Improvments
 // @description    MightyText - UI Improvments
 // @include        https://mightytext.net/*
-// @version        1.6
+// @version        1.7
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
@@ -18,7 +18,7 @@ function addJQuery(callback) {
 }
 
 var styles = {
-	"#logo, .newSMSLabel, .iconLabel, #goProWrapper" : [
+	"#logo, .newSMSLabel, .iconLabel, #goProWrapper, #alert-bottom-right-corner" : [
 		"display: none !important;"
 	]
 ,	"#sideNavigation" : [

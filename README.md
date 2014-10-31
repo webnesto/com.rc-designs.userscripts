@@ -11,3 +11,7 @@ User Scripts
 ...```
 
 Alternatively, install directly from script path - if you have GreaseMonkey or TamperMonkey, browse to scripts/script-you-want-to-install.user.js and then click "Raw" - you should be prompted to install the script.
+
+Love,
+
+~Ernesto

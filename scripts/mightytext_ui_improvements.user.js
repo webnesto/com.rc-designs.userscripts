@@ -2,7 +2,7 @@
 // @name           MightyText - UI Improvments
 // @description    MightyText - UI Improvments
 // @include        https://mightytext.net/*
-// @version        1.5
+// @version        1.6
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
@@ -18,8 +18,8 @@ function addJQuery(callback) {
 }
 
 var styles = {
-	".newMessageIcon, .iconLabel" : [
-		"display: none;"
+	"#logo, .newSMSLabel, .iconLabel, #goProWrapper" : [
+		"display: none !important;"
 	]
 ,	"#sideNavigation" : [
 		"width: 10%;"
@@ -44,7 +44,7 @@ var styles = {
 		"width: 46px;"
 	]
 ,	"#newSms" : [
-		"background-image: none;"
+		"background-position: 1px 4px;"
 	,	"padding: .5em 0;"
 	]
 ,	"#logo" : [
@@ -68,10 +68,10 @@ var styles = {
 	,	"margin: auto;"
 	]
 ,	".responseArea button" : [
-		"background-color: #00000 !important;"
+		"background-color: #000000 !important;"
 	]
 ,	".responseArea button:hover" : [
-		"background-color: #333333 !important;"
+		"background-color: #555555 !important;"
 	]
 };
 

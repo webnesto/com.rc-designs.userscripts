@@ -31,7 +31,7 @@ var styles = {
 ,	"#singleMessageContainer" : [
 		"width: 70%;"
 	]
-,	".messageThread" : [
+,	"#singleMessageContainer .messageThread" : [
 		"width: 100%;"
 	]
 ,	".newbatterywrap" : [

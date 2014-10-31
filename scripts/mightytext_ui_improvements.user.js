@@ -2,7 +2,7 @@
 // @name           MightyText - UI Improvments
 // @description    MightyText - UI Improvments
 // @include        https://mightytext.net/*
-// @version        1.0
+// @version        1.1
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
@@ -19,7 +19,20 @@ function addJQuery(callback) {
 
 var styles = {
 	"#sideNavigation" : [
-		"width: 100px;"
+		"width: 10%;"
+	]
+,	"#pinnedContent" : [
+		"left: 10%;"
+	,	"width: 90%;"
+	]
+,	"#threadListHolder" : [
+		"width: 30%;"
+	]
+,	"#singleMessageContainer" : [
+		"width: 70%;"
+	]
+,	".messageThread" : [
+		"width: 100%;"
 	]
 ,	".newbatterywrap" : [
 		"width: 44px;"
@@ -38,9 +51,6 @@ var styles = {
 		"width: 100%;"
 	,	"margin: 0;"
 	]
-,	"#pinnedContent" : [
-		"left: 100px;"
-	]
 ,	"#navBarTabs > .active > a, #navBarTabs > .active > a:hover, #singleMessageContainer .contentPanelHeader, .contentPanelHeaderText" : [
 		"background-color: #333333;"
 	]
@@ -49,6 +59,9 @@ var styles = {
 	]
 ,	".sentText:after" : [
 		"border-left-color: #bbbbbb;"
+	]
+,	".alert" : [
+		"top: 100px !important;"
 	]
 };
 

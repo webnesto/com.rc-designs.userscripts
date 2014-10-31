@@ -2,7 +2,7 @@
 // @name           MightyText - UI Improvments
 // @description    MightyText - UI Improvments
 // @include        https://mightytext.net/*
-// @version        1.4
+// @version        1.5
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
@@ -67,11 +67,11 @@ var styles = {
 		"float: none !important;"
 	,	"margin: auto;"
 	]
-,	"#upload-image-mms, .emoticonSelector, .scheduleSelector" : [
-		"background-color: #00000;"
+,	".responseArea button" : [
+		"background-color: #00000 !important;"
 	]
-,	"#upload-image-mms:hover, .emoticonSelector:hover, .emoticonSelector:focus, .scheduleSelector:hover, .scheduleSelector:focus" : [
-		"background-color: #333333;"
+,	".responseArea button:hover" : [
+		"background-color: #333333 !important;"
 	]
 };
 

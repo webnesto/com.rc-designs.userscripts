@@ -2,7 +2,7 @@
 // @name           MightyText - UI Improvments
 // @description    MightyText - UI Improvments
 // @include        https://mightytext.net/*
-// @version        1.8
+// @version        1.9
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
@@ -54,6 +54,26 @@ var styles = {
 	]
 ,	"#navBarTabs > .active > a, #navBarTabs > .active > a:hover, #singleMessageContainer .contentPanelHeader, .contentPanelHeaderText" : [
 		"background-color: #333333;"
+	]
+,	"#navBarTabs li.active a" : [
+		"width: 100%;"
+	]
+,	".thread-tab img" : [
+		"width: 20%;"
+	,	"max-width: 45px;"
+	,	"height: 20%;"
+	,	"border-radius: 50%;"
+	,	"margin: 5px 2%;"
+	]
+,	".threadNameOrNumber" : [
+		"width: 60%;"
+	,	"margin-left: 0;"
+	]
+,	".msgCountAndTimeStampInTab" : [
+		"width: 15%;"
+	,	"position: absolute;"
+	,	"right: 1%;"
+	,	"top: 5px;"	
 	]
 ,	".sentText" : [
 		"background-color: #bbbbbb;"

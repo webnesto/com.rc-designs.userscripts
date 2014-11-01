@@ -2,7 +2,7 @@
 // @name           MightyText - UI Improvments
 // @description    MightyText - UI Improvments
 // @include        https://mightytext.net/*
-// @version        1.7
+// @version        1.8
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
@@ -27,6 +27,7 @@ var styles = {
 ,	"#pinnedContent" : [
 		"left: 10%;"
 	,	"width: 90%;"
+	,	"min-width: 0;"
 	]
 ,	"#threadListHolder" : [
 		"width: 30%;"

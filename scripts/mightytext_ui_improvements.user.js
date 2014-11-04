@@ -2,7 +2,7 @@
 // @name           MightyText - UI Improvments
 // @description    MightyText - UI Improvments
 // @include        https://mightytext.net/*
-// @version        1.9
+// @version        1.10
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
@@ -37,6 +37,9 @@ var styles = {
 	]
 ,	"#singleMessageContainer .messageThread" : [
 		"width: 100%;"
+	]
+,	"#singleMessageContainer .textResponse" : [
+		"width: 80%;"
 	]
 ,	".newbatterywrap" : [
 		"width: 44px;"

@@ -30,6 +30,19 @@ var styles = {
 ,	".comments .comment:nth-child(odd)" : [
 		"background-color: #eaeaea;"
 	]
+,	".post-comment__avatar a, .comment__avatar a, .comment__avatar--anon" : [
+		"width: 2.75rem;"
+	,	"height: 2.75rem;"
+	,	"border-radius: 50%;"
+	]
+,	".post p:last-child, .post img:last-child" : [
+		"margin-bottom: 0;"
+	]
+,	".comment__actions" : [
+		"position: absolute;"
+	,	"right: 0;"
+	,	"bottom: 1em;"
+	]
 };
 
 for( var rule in styles ){

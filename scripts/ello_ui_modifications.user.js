@@ -2,7 +2,7 @@
 // @name           Ello - UI Modifications
 // @description    Ello - Various UI mods to improve UX for me
 // @include        https://ello.co/*
-// @version        1.6
+// @version        1.7
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
@@ -34,8 +34,8 @@ var styles = {
 		"border-bottom: 1px dotted #eaeaea;"
 	]
 ,	".post-comment__avatar a, .comment__avatar a, .comment__avatar--anon" : [
-		"width: 2.75rem;"
-	,	"height: 2.75rem;"
+		"width: 2rem;"
+	,	"height: 2rem;"
 	,	"border-radius: 50%;"
 	]
 ,	".comment__body p:last-child, .comment__body p:nth-last-child(2), .comment__body img:last-child, .comment__body img:nth-last-child(2)" : [

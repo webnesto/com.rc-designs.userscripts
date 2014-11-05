@@ -2,7 +2,7 @@
 // @name           Ello - UI Modifications
 // @description    Ello - Various UI mods to improve UX for me
 // @include        https://ello.co/*
-// @version        1.0
+// @version        1.1
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
@@ -22,7 +22,7 @@ var styles = {
 	".comments .comment" : [
 		"padding: 1em;"
 	]
-,	".comments .comment .comment_header" : [
+,	".comments .comment ..comment__header" : [
 		"top: 1em;"
 	,	"left: 1em;"
 	]

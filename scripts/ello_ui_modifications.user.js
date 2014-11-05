@@ -43,8 +43,11 @@ var styles = {
 	]
 ,	".comment__actions" : [
 		"position: absolute;"
-	,	"right: 0;"
+	,	"right: 1em;"
 	,	"bottom: 1em;"
+	]
+,	".comment__body, .comment__avatar a:after" : [
+		"left: 2.8125rem;"
 	]
 };
 

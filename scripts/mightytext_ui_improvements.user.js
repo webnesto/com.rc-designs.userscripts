@@ -2,7 +2,7 @@
 // @name           MightyText - UI Improvments
 // @description    MightyText - UI Improvments
 // @include        https://mightytext.net/*
-// @version        1.12
+// @version        1.13
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
@@ -40,6 +40,14 @@ var styles = {
 	]
 ,	"#singleMessageContainer .textResponse" : [
 		"width: 80%;"
+	]
+,	"#singleMessageContainer .save-draft-button-holder" : [
+		"width: 13px;"
+	,	"right: 10px;"
+	]
+,	".save-draft-button-holder" : [
+		"border: 1px solid rgba(128, 128, 128, 0.6);"
+	,	"border-radius: 2px;"
 	]
 ,	".newbatterywrap" : [
 		"width: 44px;"

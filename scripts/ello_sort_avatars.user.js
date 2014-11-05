@@ -2,7 +2,7 @@
 // @name           Ello - Sort Avatars Alphabetically
 // @description    Ello - Sort Avatars Alphabetically
 // @include        https://ello.co/*
-// @version        1.0
+// @version        1.1
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
@@ -17,10 +17,31 @@ function addJQuery(callback) {
   document.body.appendChild(script);
 }
 
-GM_addStyle( '.layout-mode .toolbar--open .toolbar, .layout-mode .drawer { width: 23.625rem; }' );
-GM_addStyle( '.script-avatar-alphabet { position: fixed; left: 4%; width: 91%; top: 66px; letter-spacing: -1px; }' );
-GM_addStyle( '.script-avatar-letter { background-color: #e5e5e5; margin-top: 2em; }' );
+var styles = {
+	".layout-mode .toolbar--open .toolbar, .layout-mode .drawer" : [
+		"width: 23.625rem;"
+	]
+,	".script-avatar-alphabet" : [
+		"position: fixed;"
+	,	"left: 4%;"
+	,	"width: 91%;"
+	,	"top: 66px;"
+	,	"letter-spacing: -1px;"
+	]
+,	".script-avatar-letter" : [
+		"background-color: #e5e5e5;"
+	,	"margin-top: 2em;"
+	]
+,	".script-avatar-alphabet a" : [
+		"display: block;"
+	,	"float: left;"
+	,	"width: 3.846%;"
+	]
+};
 
+for( var rule in styles ){
+	GM_addStyle( rule + "{" + styles[ rule ].join( "" ) + "}" );
+}
 
 addJQuery( function(){
 	var alpha="ABCDEFGHIJKLMNOPQRSTUVWXYZ";

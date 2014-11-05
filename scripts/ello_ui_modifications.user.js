@@ -2,7 +2,7 @@
 // @name           Ello - UI Modifications
 // @description    Ello - Various UI mods to improve UX for me
 // @include        https://ello.co/*
-// @version        1.3
+// @version        1.4
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading

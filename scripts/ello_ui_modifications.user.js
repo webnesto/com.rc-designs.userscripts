@@ -18,10 +18,17 @@ function addJQuery(callback) {
 }
 
 var styles = {
-  //improve comment display
-	".comments .comment:nth-child(odd)" : [
-    "background-color: #eaeaea;"
-  ]
+	//improve comment display
+	".comments .comment" : [
+		"padding: 1em;"
+	]
+,	".comments .comment .comment_header" : [
+		"top: 1em;"
+	,	"left: 1em;"
+	]
+,	".comments .comment:nth-child(odd)" : [
+		"background-color: #eaeaea;"
+	]
 };
 
 for( var rule in styles ){

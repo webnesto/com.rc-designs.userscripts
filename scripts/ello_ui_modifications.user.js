@@ -38,7 +38,7 @@ var styles = {
 	,	"height: 2.75rem;"
 	,	"border-radius: 50%;"
 	]
-,	".comment__body p:last-child, .comment__body img:last-child" : [
+,	".comment__body p:last-child, .comment__body p:nth-last-child(2), .comment__body img:last-child, .comment__body img:nth-last-child(2)" : [
 		"margin-bottom: 0 !important;"
 	]
 ,	".comment__actions" : [

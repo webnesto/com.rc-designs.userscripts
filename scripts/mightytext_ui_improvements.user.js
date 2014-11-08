@@ -2,7 +2,7 @@
 // @name           MightyText - UI Improvments
 // @description    MightyText - UI Improvments
 // @include        https://mightytext.net/*
-// @version        1.7
+// @version        1.13
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
@@ -18,7 +18,7 @@ function addJQuery(callback) {
 }
 
 var styles = {
-	"#logo, .newSMSLabel, .iconLabel, #goProWrapper, #alert-bottom-right-corner" : [
+	"#logo, .newSMSLabel, .iconLabel, #goProWrapper, #alert-bottom-right-corner, #heart-mt-button, #messageViewToggle, #share-button-main, .scheduleSelector.btn, .templateDropUpIcon, #events" : [
 		"display: none !important;"
 	]
 ,	"#sideNavigation" : [
@@ -27,6 +27,7 @@ var styles = {
 ,	"#pinnedContent" : [
 		"left: 10%;"
 	,	"width: 90%;"
+	,	"min-width: 0;"
 	]
 ,	"#threadListHolder" : [
 		"width: 30%;"
@@ -36,6 +37,17 @@ var styles = {
 	]
 ,	"#singleMessageContainer .messageThread" : [
 		"width: 100%;"
+	]
+,	"#singleMessageContainer .textResponse" : [
+		"width: 80%;"
+	]
+,	"#singleMessageContainer .save-draft-button-holder" : [
+		"width: 13px;"
+	,	"right: 10px;"
+	]
+,	".save-draft-button-holder" : [
+		"border: 1px solid rgba(128, 128, 128, 0.6);"
+	,	"border-radius: 2px;"
 	]
 ,	".newbatterywrap" : [
 		"width: 44px;"
@@ -53,6 +65,26 @@ var styles = {
 	]
 ,	"#navBarTabs > .active > a, #navBarTabs > .active > a:hover, #singleMessageContainer .contentPanelHeader, .contentPanelHeaderText" : [
 		"background-color: #333333;"
+	]
+,	"#navBarTabs li.active a" : [
+		"width: 100%;"
+	]
+,	".thread-tab img" : [
+		"width: 20%;"
+	,	"max-width: 45px;"
+	,	"height: 20%;"
+	,	"border-radius: 50%;"
+	,	"margin: 5px 2%;"
+	]
+,	".threadNameOrNumber" : [
+		"width: 60%;"
+	,	"margin-left: 0;"
+	]
+,	".msgCountAndTimeStampInTab" : [
+		"width: 15%;"
+	,	"position: absolute;"
+	,	"right: 1%;"
+	,	"top: 5px;"	
 	]
 ,	".sentText" : [
 		"background-color: #bbbbbb;"

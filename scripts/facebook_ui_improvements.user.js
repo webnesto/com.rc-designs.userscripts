@@ -2,7 +2,7 @@
 // @name           Facebook - UI Improvments
 // @description    Facebook - UI Improvments
 // @include        https://www.facebook.com/*
-// @version        1.0
+// @version        1.1
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
@@ -18,6 +18,7 @@
 // }
 
 var styles = {
+	//icons
 	'#blueBarNAXAnchor' : [
 		"background: #333333;"
 	]
@@ -31,10 +32,14 @@ var styles = {
 		"background-position: 0 -607px;"
 	]
 ,	'#privacyFlyoutLabel' : [
-		"background-position: 0 -370px;"
+		"background-position: -34px -370px;"
 	]
 ,	'#userNavigationLabel' : [
 		"background-position: -252px -100px;"
+	]
+	//links
+,	'a': [
+		"color: #350B1D;"
 	]
 };
 

@@ -19,7 +19,10 @@
 
 var styles = {
 	//improve comment display
-	".comments .comment" : [
+	".comment__editor+.comments" : [
+		"max-width: 615px;"
+	]
+,	".comments .comment" : [
 		"padding: 1em;"
 	,	"margin-top: 0;"
 	]
@@ -49,6 +52,7 @@ var styles = {
 ,	".comment__body, .comment__avatar a:after" : [
 		"left: 0;"
 	,	"padding-left: 2.8125rem;"
+	,	"max-width: 400px;"
 	]
 ,	".comment-editor--focused .editor__actions" : [
 		"height: 2rem;"

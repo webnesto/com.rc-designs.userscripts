@@ -2,7 +2,7 @@
 // @name           Ello - Sort Avatars Alphabetically
 // @description    Ello - Sort Avatars Alphabetically
 // @include        https://ello.co/*
-// @version        1.1
+// @version        1.2
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
@@ -19,7 +19,7 @@ function addJQuery(callback) {
 
 var styles = {
 	".layout-mode .toolbar--open .toolbar, .layout-mode .drawer" : [
-		"width: 23.625rem;"
+		"max-width: 23.625rem;"
 	]
 ,	".script-avatar-alphabet" : [
 		"position: fixed;"
@@ -36,6 +36,11 @@ var styles = {
 		"display: block;"
 	,	"float: left;"
 	,	"width: 3.846%;"
+	]
+	//skinny layout:
+,	"@media (max-width: 71.1875em) and (min-width: 45em) { .script-avatar-alphabet" : [
+		"top: 233px;"
+	,	"}" //close the media query
 	]
 };
 

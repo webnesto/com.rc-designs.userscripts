@@ -8,12 +8,12 @@
 // @include       http://*.mail.google.com/*
 // @include       https://*.mail.google.com/*
 // @run-at        document-start
-// @version       1.0
+// @version       1.1
 // ==/UserScript==
 
 var styles = {
-	"div.h7:nth-of-type(odd) div.adn.ads,  div.kv:nth-of-type(odd)": [
-		"background-color: rgba(0,0,255,0.05);"
+	"div.h7:nth-of-type(even) div.adn.ads,  div.kv:nth-of-type(even)": [
+		"background-color: rgba(134,134,134,0.05);"
 	]
 ,	"div.kv div.G2": [
 		"background-color: transparent !important;"

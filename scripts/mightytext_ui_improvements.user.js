@@ -2,20 +2,20 @@
 // @name           MightyText - UI Improvments
 // @description    MightyText - UI Improvments
 // @include        https://mightytext.net/*
-// @version        1.13
+// @version        1.14
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
-function addJQuery(callback) {
-  var script = document.createElement("script");
-  script.setAttribute("src", "//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js");
-  script.addEventListener('load', function() {
-    var script = document.createElement("script");
-    script.textContent = "window.jQ=jQuery.noConflict(true);(" + callback.toString() + ")();";
-    document.body.appendChild(script);
-  }, false);
-  document.body.appendChild(script);
-}
+// function addJQuery(callback) {
+//   var script = document.createElement("script");
+//   script.setAttribute("src", "//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js");
+//   script.addEventListener('load', function() {
+//     var script = document.createElement("script");
+//     script.textContent = "window.jQ=jQuery.noConflict(true);(" + callback.toString() + ")();";
+//     document.body.appendChild(script);
+//   }, false);
+//   document.body.appendChild(script);
+// }
 
 var styles = {
 	"#logo, .newSMSLabel, .iconLabel, #goProWrapper, #alert-bottom-right-corner, #heart-mt-button, #messageViewToggle, #share-button-main, .scheduleSelector.btn, .templateDropUpIcon, #events" : [
@@ -84,7 +84,7 @@ var styles = {
 		"width: 15%;"
 	,	"position: absolute;"
 	,	"right: 1%;"
-	,	"top: 5px;"	
+	,	"top: 5px;"
 	]
 ,	".sentText" : [
 		"background-color: #bbbbbb;"
@@ -107,12 +107,40 @@ var styles = {
 	]
 };
 
+
+var csses = [];
+
 for( var rule in styles ){
-	GM_addStyle( rule + "{" + styles[ rule ].join( "" ) + "}" );
+	var css = rule + "{" + styles[ rule ].join( "" ) + "}";
+	if (typeof GM_addStyle !== "undefined") {
+		GM_addStyle(css);
+	} else if (typeof PRO_addStyle !== "undefined") {
+		PRO_addStyle(css);
+	} else if (typeof addStyle !== "undefined") {
+		addStyle(css);
+	} else {
+		csses.push( css );
+	}
+}
+
+if( csses.length ){
+	var node = document.createElement("style");
+	node.type = "text/css";
+	for( var i=0, l=csses.length; i < l; i++ ){
+		node.appendChild(document.createTextNode(csses[ i ]));
+	}
+	var heads = document.getElementsByTagName("head");
+	if (heads.length > 0) {
+		heads[0].appendChild(node);
+	} else {
+		// no head yet, stick it whereever
+		document.documentElement.appendChild(node);
+	}
 }
 
 
-addJQuery( function(){
+
+// addJQuery( function(){
 	
 
-});
+// });

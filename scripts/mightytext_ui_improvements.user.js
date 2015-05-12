@@ -5,17 +5,17 @@
 // @version        1.14
 // ==/UserScript==
 
-// a function that loads jQuery and calls a callback function when jQuery has finished loading
-// function addJQuery(callback) {
-//   var script = document.createElement("script");
-//   script.setAttribute("src", "//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js");
-//   script.addEventListener('load', function() {
-//     var script = document.createElement("script");
-//     script.textContent = "window.jQ=jQuery.noConflict(true);(" + callback.toString() + ")();";
-//     document.body.appendChild(script);
-//   }, false);
-//   document.body.appendChild(script);
-// }
+a function that loads jQuery and calls a callback function when jQuery has finished loading
+function addJQuery(callback) {
+  var script = document.createElement("script");
+  script.setAttribute("src", "//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js");
+  script.addEventListener('load', function() {
+    var script = document.createElement("script");
+    script.textContent = "window.jQ=jQuery.noConflict(true);(" + callback.toString() + ")();";
+    document.body.appendChild(script);
+  }, false);
+  document.body.appendChild(script);
+}
 
 var styles = {
 	"#logo, .newSMSLabel, .iconLabel, #goProWrapper, #alert-bottom-right-corner, #heart-mt-button, #messageViewToggle, #share-button-main, .scheduleSelector.btn, .templateDropUpIcon, #events" : [
@@ -138,9 +138,32 @@ if( csses.length ){
 	}
 }
 
+function keyCheck(e){
+	if( e.altKey){
+		var kc = e.keyCode;
+		switch( kc ){
+			case 49:
+			case 50:
+			case 51:
+			case 52:
+			case 53:
+			case 54:
+			case 55:
+			case 56:
+			case 57:
+				var index = kc - 49;
+
+				$( "#navBarTabs li a").eq( index ).click();
+			break;
+			default:
+			//do nothing
+		}
+	}
+}
 
 
-// addJQuery( function(){
+
+addJQuery( function(){
 	
 
-// });
+});

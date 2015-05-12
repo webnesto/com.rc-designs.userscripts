@@ -2,7 +2,7 @@
 // @name           MightyText - UI Improvments
 // @description    MightyText - UI Improvments
 // @include        https://mightytext.net/*
-// @version        1.18
+// @version        1.19
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
@@ -138,33 +138,31 @@ if( csses.length ){
 	}
 }
 
-function keyCheck(e){
-	if( e.altKey){
-		var kc = e.keyCode;
-		switch( kc ){
-			case 49:
-			case 50:
-			case 51:
-			case 52:
-			case 53:
-			case 54:
-			case 55:
-			case 56:
-			case 57:
-				var index = kc - 49;
+addJQuery( function(){
+	function keyCheck(e){
+		if( e.altKey){
+			var kc = e.keyCode;
+			switch( kc ){
+				case 49:
+				case 50:
+				case 51:
+				case 52:
+				case 53:
+				case 54:
+				case 55:
+				case 56:
+				case 57:
+					var index = kc - 49;
 
-				console.log( $( "#navBarTabs li a").eq( index ) );
-				$( "#navBarTabs li a").eq( index ).click();
-			break;
-			default:
-			//do nothing
+					console.log( $( "#navBarTabs li a").eq( index ) );
+					$( "#navBarTabs li a").eq( index ).click();
+				break;
+				default:
+				//do nothing
+			}
 		}
 	}
-}
 
-
-
-addJQuery( function(){
 	$( document ).bind( "keyup", keyCheck );
 
 });

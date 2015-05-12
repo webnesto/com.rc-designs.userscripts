@@ -2,7 +2,7 @@
 // @name           MightyText - UI Improvments
 // @description    MightyText - UI Improvments
 // @include        https://mightytext.net/*
-// @version        1.17
+// @version        1.18
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
@@ -153,6 +153,7 @@ function keyCheck(e){
 			case 57:
 				var index = kc - 49;
 
+				console.log( $( "#navBarTabs li a").eq( index ) );
 				$( "#navBarTabs li a").eq( index ).click();
 			break;
 			default:

@@ -2,7 +2,7 @@
 // @name           MightyText - UI Improvments
 // @description    MightyText - UI Improvments
 // @include        https://mightytext.net/*
-// @version        1.19
+// @version        1.20
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
@@ -66,7 +66,7 @@ var styles = {
 ,	"#navBarTabs > .active > a, #navBarTabs > .active > a:hover, #singleMessageContainer .contentPanelHeader, .contentPanelHeaderText" : [
 		"background-color: #333333;"
 	]
-,	"#navBarTabs li.active a" : [
+,	"#navBarTabs .thread-tab" : [
 		"width: 100%;"
 	]
 ,	".thread-tab img" : [

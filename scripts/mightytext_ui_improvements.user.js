@@ -2,7 +2,7 @@
 // @name           MightyText - UI Improvments
 // @description    MightyText - UI Improvments
 // @include        https://mightytext.net/*
-// @version        1.16
+// @version        1.17
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
@@ -164,6 +164,6 @@ function keyCheck(e){
 
 
 addJQuery( function(){
-	
+	$( document ).bind( "keyup", keyCheck );
 
 });

@@ -5,7 +5,7 @@
 // @version        1.15
 // ==/UserScript==
 
-a function that loads jQuery and calls a callback function when jQuery has finished loading
+// a function that loads jQuery and calls a callback function when jQuery has finished loading
 function addJQuery(callback) {
   var script = document.createElement("script");
   script.setAttribute("src", "//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js");

@@ -2,7 +2,7 @@
 // @name           MightyText - UI Improvments
 // @description    MightyText - UI Improvments
 // @include        https://mightytext.net/*
-// @version        1.20
+// @version        1.21
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
@@ -139,6 +139,7 @@ if( csses.length ){
 }
 
 addJQuery( function(){
+	console.log( 'jquery loaded' );
 	function keyCheck(e){
 		if( e.altKey){
 			var kc = e.keyCode;
